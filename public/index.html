@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--Create a form for registering a new user with the following information:
+First Name, Last Name, Email, Phone, Age, Password, and Password Confirmation
+Apply appropriate validation for each input -->
+    <title>Mike's sample form</title>
+  </head>
+  <body>
+  <h2 id="back to top">
+    Mike's sample form
+  </h2>
+  <nav>
+    <a rel="formSelector" href="#new user">new user</a>
+    <br>
+    <a rel="formSelector" href="#forgot password">forgot password</a>
+    <br>
+    <a rel="formSelector" href="#login">login</a>
+  </nav>
+
+
+  <form id="new user">
+    <h2>New User</h2>
+    First name:<br>
+    <input id="firstname" type="text" name="firstname" placeholder="First" required>
+    <br>
+    Last name:<br>
+    <input id="lastname" type="text" name="lastname" placeholder="Last" required>
+    <br>
+    Email:<br>
+    <input id="email" type="email" name="email" placeholder="Email" required>
+    <br>
+    Phone:<br>
+    <input id="phone" type="text" name="phone" placeholder="Phone" required>
+    <br>
+    Age:<br>
+    <input id="age" type="number" name="age" placeholder="Age" required>
+    <br>
+    Password:<br>
+    <input id="password" type="password" name="password" placeholder="password" required>
+    <br>
+    Confirm Password:<br>
+    <input id="confirmpassword" type="password" name="password" placeholder="password" required>
+    <br><br>
+    <input type="submit">
+    <input type="button" onclick="clickHandler()">
+  </form>
+  <br>
+  <a rel="formSelector" href="#back to top">back to top</a>
+
+  <br><br>
+
+
+  <script clickHandler = () => {
+      const first = document.getElementById("firstname").value;
+      const last = document.getElementById("lastname").value;
+      const address = document.getElementById("address").value;
+      const city = document.getElementById("city").value;
+      const state = document.getElementById("state").value;
+      const zip = document.getElementById("zip").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      console.log(first, last, address, city, state, zip, email, password)
+  }
+  }</script>
+
+  <form id="forgot password">
+    <h2>Reset Password</h2>
+    Email:<br>
+    <input id="email" type="email" name="email" placeholder="enter your email" required>
+    <br><br>
+    <input type="submit">
+  </form>
+  <br>
+  <a rel="formSelector" href="#back to top">back to top</a>
+
+  <br><br>
+
+  <form id="login">
+    <h2>Login</h2>
+    User name:<br>
+    <input id="firstname" type="text" name="firstname" placeholder="First" required>
+    <br>
+    Password:<br>
+    <input id="password" type="password" name="password" placeholder="password" required>
+    <br><br>
+    <input type="submit">
+  </form>
+  <br>
+  <a rel="formSelector" href="#back to top">back to top</a>
+
+
+  </body>
+</html>
